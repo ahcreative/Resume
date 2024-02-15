@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <!-- --------- Navbar --------- -->
+    <nav class="container">
+      <a href="" class="logo">Portf<span>olio.</span></a>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="./index.html" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="./services.html" class="nav-link">Services</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+        <i class="uil uil-moon hello"></i>
+        
+      </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+  <!-- --------- Services Section --------- -->
+  <section class="services section">
+    <img src="./assets/triangle.png" class="shape triangle" alt="" srcset="">
+    <div class="container">
+      <div class="services-info">
+        <h3 class="sub-heading">My Services</h3>
+        <h1 class="heading">Things I may do for my clients</h1>
+        <p class="text">
+          Offering extensive expertise in user research, design consultation, and rigorous testing, I am equipped to bring your data-driven product to fruition
+        </p>
+        <div class="milestones">
+          <div class="ml">
+            <h2 class="number"><span >2</span>+</h2>
+            <h5>Years</h5>
+          </div>
+          <div class="ml">
+            <h2 class="number"><span >5</span>+</h2>
+            <h5>Projects</h5>
+          </div>
+          <div class="ml">
+            <h2 class="number"><span >10</span>+</h2>
+            <h5>clients</h5>
+          </div>
+        </div>
+        <div class="cta">
+          <a href="mailto:anashamid891@gmail.com" class="btn">Hire Me</a>
+          <a href="./assets/CV.pdf" download class="btn secondary-btn">Download CV</a>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="srv-card">
+          <div class="card-desc">
+            <h3>Data Insights</h3>
+            <p class="text">
+              We harness the power of data to craft compelling narratives and drive strategic decisions.
+Our mission is to deliver actionable insights and innovative solutions that empower businesses to thrive in the digital age
+            </p>
+          </div>
+          <a href="#" class="btn secondary-btn">Explore More</a>
+        </div>
+        <div class="srv-card">
+          <div class="card-desc">
+            <h3>Statistical Analysis</h3>
+            <p class="text">
+              Perform comprehensive statistical analyses, including hypothesis testing, regression analysis, and inferential statistics, to uncover trends, patterns, and relationships within data sets.
+               Utilize advanced statistical techniques to derive meaningful conclusions and provide valuable insights that inform strategic decision-making processes.
+            </p>
+          </div>
+          <a href="#" class="btn secondary-btn">Explore More</a>
+        </div>
+        <div class="srv-card">
+          <div class="card-desc">
+            <h3>Model Deployment</h3>
+            <p class="text">
+              Specializing in the seamless integration of machine learning models into production environments, we ensure efficient deployment for real-world applications.
+               From selecting the right deployment architecture to optimizing performance and scalability, our expertise guarantees the successful implementation of data-driven solutions
+            </p>
+          </div>
+          <a href="#" class="btn secondary-btn">Explore More</a>
+        </div>
+        <div class="srv-card">
+          <div class="card-desc">
+            <h3>Consulting and Strategy</h3>
+            <p class="text">
+              Offer expert consulting services and strategic guidance in leveraging data-driven insights to address complex business challenges and drive organizational growth. 
+              Provide tailored strategies and actionable recommendations to optimize processes, enhance performance, and achieve measurable outcomes in alignment with business objectives.
+            </p>
+          </div>
+          <a href="#" class="btn secondary-btn">Explore More</a>
+        </div>
+        <img src="./assets/square1.png" class="shape square" alt="" srcset="">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <!-- --------- Footer --------- -->
+    <div class="container">
+      <a href="" class="logo">Portf<span>olio.</span></a>
+    <p class="text">&copy; Copyright 2022. All rights reserved</p>
+    <ul class="social-media">
+      <li>
+        <a href="https://www.instagram.com/anas_hamid90/" class="social-link">
+          <i class="uil uil-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://t.snapchat.com/jQQmaEBs" class="social-link">
+          <i class="uil uil-snapchat-ghost"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/anas-hamid-820a77253/" class="social-link">
+          <i class="uil uil-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/mixitup.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    const hello = document.querySelector(".hello");
+    const hamburger= document.querySelector(".hamburger");
+    hamburger.addEventListener("click", () =>{
+   document.body.classList.toggle("open");
+   document.body.classList.toggle("stopScrolling");
+})
+
+links.forEach((link) =>
+  link.addEventListener("click",() =>{
+    document.body.classList.remove("open");
+   document.body.classList.remove("stopScrolling");
+  })
+);
+ 
+let firstTheme = localStorage.getItem("dark");
+
+changeTheme(+firstTheme);
+
+function changeTheme(isDark){
+  if(isDark){
+    document.body.classList.add("dark");
+    hello.classList.replace("uil-moon", "uil-sun");
+    localStorage.setItem("dark",1);
+
+  }else{
+    document.body.classList.remove("dark");
+    hello.classList.replace("uil-sun", "uil-moon");
+    localStorage.setItem("dark", 0);
+  }
+}
+
+hello.addEventListener("click", () => {
+  changeTheme(!document.body.classList.contains("dark"));
+});
+  </script>
+</body>
+
+</html>

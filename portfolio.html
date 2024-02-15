@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <!-- --------- Navbar --------- -->
+    <nav class="container">
+      <a href="" class="logo">Portf<span>olio.</span></a>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="./index.html" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="./services.html" class="nav-link">Services</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+        <i class="uil uil-moon hello"></i>
+        
+      </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- --------- Portfolio Section --------- -->
+    <section class="portfolio section">
+      <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="slider-wrap">
+          <div class="prev-btn navigation">
+            <i class="uil uil-angle-left-b"></i>
+          </div>
+          <div class="images">
+            <img class="showImage" src="./assets/port1.jpg" alt="">
+            <img src="./assets/port2.png" alt="">
+            <img src="./assets/port3.jpg" alt="">
+            <img src="./assets/port4.png" alt="">
+            <img src="./assets/port5.png" alt="">
+            <img src="./assets/port6.jpg" alt="">
+          </div>
+          <div class="next-btn navigation">
+            <i class="uil uil-angle-right-b"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="portfolio-header">
+          <div class="portfolio-title">
+            <h3 class="sub-heading">Portfolio</h3>
+            <h1 class="heading">Latest Projects</h1>
+          </div>
+          <div class="filter-btns">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter=".product">Anaylsis</button>
+            <button class="filter-btn" data-filter=".inter">ML</button>
+          </div>
+        </div>
+        <div class="portfolio-gallery">
+          <div class="mix prt-card product">
+            <div class="prt-image">
+              <img src="./assets/port1.jpg" alt="" srcset="">
+              <div class="prt-overlay">
+                <span class="prt-icon zoom-icon" style="--i:0s;">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i:.15s;">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+            </div>
+            <div class="prt-desc">
+              <h3>Analysis with Power BI</h3>
+              <a href="#" class="btn secondary-btn sm">Read More</a>
+            </div>
+          </div>
+          <div class="mix prt-card product">
+            <div class="prt-image">
+              <img src="./assets/port2.png" alt="" srcset="">
+              <div class="prt-overlay">
+                <span class="prt-icon zoom-icon" style="--i:0s">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i:.15s;">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+            </div>
+            <div class="prt-desc">
+              <h3>Regression Analysis</h3>
+              <a href="#" class="btn secondary-btn sm">Read More</a>
+            </div>
+          </div>
+          <div class="mix prt-card inter">
+            <div class="prt-image">
+              <img src="./assets/port3.jpg" alt="" srcset="">
+              <div class="prt-overlay">
+                <span class="prt-icon zoom-icon" style="--i:0s">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i:.15s;">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+            </div>
+            <div class="prt-desc">
+              <h3>Unraveling tax fraud</h3>
+              <a href="#" class="btn secondary-btn sm">Read More</a>
+            </div>
+          </div>
+          <div class="mix prt-card inter">
+            <div class="prt-image">
+              <img src="./assets/port4.png" alt="" srcset="">
+              <div class="prt-overlay">
+                <span class="prt-icon zoom-icon" style="--i:0s">
+                  <i class="uil uil-search-plus"></i>
+                </span>
+                <a href="#" class="prt-icon" style="--i:.15s;">
+                  <i class="uil uil-link-h"></i>
+                </a>
+              </div>
+              
+            </div>
+            <div class="prt-desc">
+              <h3>NLP-Powered Poetry Generation</h3>
+              <a href="#" class="btn secondary-btn sm">Read More</a>
+            </div>
+          </div>
+         
+          
+        </div>
+      </div>
+    </section>
+    <!-- --------- Testimonials Section --------- -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-background">
+          <img src="./assets/circle2.png" class="circle" alt="" srcset="">
+          <img src="./assets/square1.png" class="square" alt="">
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="client">
+              <img src="./assets/testi1.png" alt="">
+              <div class="client-info">
+                <h4>Kelly Williams</h4>
+                <h5>Executive Officer <a href="#">@ABEnergy</a></h5>
+              </div>
+            </div>
+            <q class="text">
+              Their team of experts provided invaluable insights and guidance throughout our project.
+               From data analysis to model deployment, they demonstrated professionalism and expertise every step of the way. 
+               Their commitment to delivering high-quality solutions exceeded our expectations, and we look forward to continuing our partnership in future endeavors.
+                Highly recommended for anyone seeking top-notch data science services.
+            </q>
+          </div>
+          <div class="swiper-slide">
+            <div class="client">
+              <img src="./assets/testi2.png" alt="">
+              <div class="client-info">
+                <h4>Witold Gislenus</h4>
+                <h5>CEO of <a href="#">@Eco_Focus</a></h5>
+              </div>
+            </div>
+            <q class="text">
+              I'm thrilled with the results!
+              The team was very responsive, professional, and knowledgeable, and they worked quickly and efficiently to get my website up and running.
+              The finished product looks great, and I'm incredibly impressed with their work.
+              Highly recommend!
+            </q>
+          </div>
+          <div class="swiper-slide">
+            <div class="client">
+              <img src="./assets/testi3.png" alt="">
+              <div class="client-info">
+                <h4>Ben Dennis</h4>
+                <h5>Software Engineer <a href="#">@Epic_Dev</a></h5>
+              </div>
+            </div>
+            <q class="text">
+              Their data scientists are truly exceptional, providing insightful analysis and strategic recommendations that have had a profound impact on our business. 
+              From the initial consultation to the final deployment, their attention to detail and dedication to excellence were evident at every stage of the project.
+               We highly commend their professionalism, expertise, and commitment to client satisfaction. Working with [Company Name] has been a game-changer for our organization
+            </q>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+        <div class="testimonials-title">
+          <h3 class="sub-heading">Testimonals</h3>
+          <h1 class="heading">Hear From my
+             clients</h1>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- --------- Footer --------- -->
+    <div class="container">
+      <a href="" class="logo">Portf<span>olio.</span></a>
+    <p class="text">&copy; Copyright 2022. All rights reserved</p>
+    <ul class="social-media">
+      <li>
+        <a href="https://www.instagram.com/anas_hamid90/" class="social-link">
+          <i class="uil uil-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://t.snapchat.com/jQQmaEBs" class="social-link">
+          <i class="uil uil-snapchat-ghost"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/anas-hamid-820a77253/" class="social-link">
+          <i class="uil uil-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/mixitup.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    const hello = document.querySelector(".hello");
+    const hamburger= document.querySelector(".hamburger");
+    hamburger.addEventListener("click", () =>{
+   document.body.classList.toggle("open");
+   document.body.classList.toggle("stopScrolling");
+})
+
+links.forEach((link) =>
+  link.addEventListener("click",() =>{
+    document.body.classList.remove("open");
+   document.body.classList.remove("stopScrolling");
+  })
+);
+ 
+let firstTheme = localStorage.getItem("dark");
+
+changeTheme(+firstTheme);
+
+function changeTheme(isDark){
+  if(isDark){
+    document.body.classList.add("dark");
+    hello.classList.replace("uil-moon", "uil-sun");
+    localStorage.setItem("dark",1);
+
+  }else{
+    document.body.classList.remove("dark");
+    hello.classList.replace("uil-sun", "uil-moon");
+    localStorage.setItem("dark", 0);
+  }
+}
+
+hello.addEventListener("click", () => {
+  changeTheme(!document.body.classList.contains("dark"));
+});
+  </script>
+</body>
+
+</html>

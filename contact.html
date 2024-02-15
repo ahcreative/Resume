@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <header>
+    <!-- --------- Navbar --------- -->
+    <nav class="container">
+      <a href="" class="logo">Portf<span>olio.</span></a>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="./index.html" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="./services.html" class="nav-link">Services</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Login/Register</a>
+          </li>
+        </ul>
+        <i class="uil uil-moon hello"></i>
+        
+      </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+   <!-- --------- Contact Section --------- -->
+    <section class="contact section">
+      <img src="./assets/triangle.png" alt="" class="shape triangle">
+      <div class="container">
+        <img src="./assets/square2.png" alt="" class="shape square">
+        <div class="contact-info">
+          <h3 class="sub-heading">Contact Me</h3>
+          <h1 class="heading">Let's Work Together</h1>
+          <p class="text">
+            Hey there! Thanks for taking an interest in my services. 
+            If you have any questions or inquiries, please don't hesitate to contact me.
+            I'm available to answer any of your questions via email or phone. Thanks again!
+          </p>
+          <a href="mailto:anashamid891@gmail.com" class="mail">anashamid891@gmail.com<i class="uil uil-arrow-right"></i></a>
+        </div>
+
+
+        <form action="index.html" class="contact-form">
+          <h3>Send me a message</h3>
+          <input type="text" class="form-input" placeholder="Your Name" required>
+          <input type="email" class="form-input" placeholder="Your Email" required>
+          <textarea placeholder="Project Details" required class="form-input"></textarea>
+          <input type="submit" value="Send" class="btn">
+        </form>
+      </div>
+    </section>
+    <!-- --------- Subscription Section --------- -->
+    <section class="subscription section">
+      <div class="container">
+        <img src="./assets/map.png" class="map" srcset="">
+        <div class="sub-box">
+          <img src="./assets/square2.png" alt="" class="shape square">
+          <div class="sub-info">
+              <h3 class="sub-heading">Newsletter</h3>
+              <h1 class="heading">Get news about my projects</h1>
+              <p class="text">
+                Subscribe to stay up to date on my latest projects and get exclusive news about new products and services!
+              </p>
+        </div>
+        <form action="index.html">
+          <input type="email" required placeholder="Email" class="form-input">
+          <input type="submit" value="Subscribe" class="btn">
+        </form>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- --------- Footer --------- -->
+    <div class="container">
+      <a href="" class="logo">Portf<span>olio.</span></a>
+    <p class="text">&copy; Copyright 2022. All rights reserved</p>
+    <ul class="social-media">
+      <li>
+        <a href="https://www.instagram.com/anas_hamid90/" class="social-link">
+          <i class="uil uil-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://t.snapchat.com/jQQmaEBs" class="social-link">
+          <i class="uil uil-snapchat-ghost"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/anas-hamid-820a77253/" class="social-link">
+          <i class="uil uil-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/mixitup.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    const hello = document.querySelector(".hello");
+    const hamburger= document.querySelector(".hamburger");
+    hamburger.addEventListener("click", () =>{
+   document.body.classList.toggle("open");
+   document.body.classList.toggle("stopScrolling");
+})
+
+links.forEach((link) =>
+  link.addEventListener("click",() =>{
+    document.body.classList.remove("open");
+   document.body.classList.remove("stopScrolling");
+  })
+);
+ 
+let firstTheme = localStorage.getItem("dark");
+
+changeTheme(+firstTheme);
+
+function changeTheme(isDark){
+  if(isDark){
+    document.body.classList.add("dark");
+    hello.classList.replace("uil-moon", "uil-sun");
+    localStorage.setItem("dark",1);
+
+  }else{
+    document.body.classList.remove("dark");
+    hello.classList.replace("uil-sun", "uil-moon");
+    localStorage.setItem("dark", 0);
+  }
+}
+
+hello.addEventListener("click", () => {
+  changeTheme(!document.body.classList.contains("dark"));
+});
+  </script>
+</body>
+
+</html>
